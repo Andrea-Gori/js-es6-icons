@@ -5,6 +5,12 @@
   font-family: sans-serif;
 }
 
+body{
+  background-color: #DDDDDD;
+  font-family: sans-serif;
+}
+
+
 #titolo {
   font-size: 35px;
   font-weight: bolder;
@@ -16,6 +22,7 @@
 
 .titolo-div {
   height: 60px;
+  background-color: #fff;
 }
 
 .navbar {
@@ -37,7 +44,7 @@
 
 main {
   background-color: #DDDDDD;
-  height: 800px;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
 
@@ -48,7 +55,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: calc((100% / 5) - 25px);
-  height: 90px;
+  height: 105px;
   background-color: #fff;
   border-radius: 10px;
   margin-left: 20px;

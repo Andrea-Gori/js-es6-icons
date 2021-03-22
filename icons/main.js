@@ -108,7 +108,16 @@ icons.forEach((element, index) => {
 	}
 
 
-	$('#main').append(`<div class="card"><i class="${element.family} ${element.prefix}${element.name} ${colore}"></i><span>${element.name}</span></div>`)
+	$('#main').append(`<div class="card ${element.type}"><i class="${element.family} ${element.prefix}${element.name} ${colore}"></i><span>${element.name}</span></div>`)
 });
 
+$('#filtro').change(function () {
+	let value = $(this).val()
 
+	if (value == 'all') {
+		$('.card').show()
+	}else {
+		$('.card').hide()
+		$(`.card.${value}`).show()
+	}
+})
